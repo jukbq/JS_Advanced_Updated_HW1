@@ -10,14 +10,14 @@
         </div>
         <hr>
         <div class="input_bad_word">
-            <input (focus)="clear()" [(ngModel)]="inp_bw" type="text" class="form-control ds-input" [class]="bw_input">
-            <button (click)="addBtn()" type="button" class="btn btn-warning add_btn">Add</button>
-            <button type="button" class="btn btn-danger reset_btn">Reset</button>
+            <input (focus)="clear_bw()" [(ngModel)]="inp_bw" type="text" class="form-control ds-input" [class]="bw_input">
+            <button (click)="addBad()" type="button" class="btn btn-warning">Add</button>
+            <button (click)="reset()" type="button" class="btn btn-danger">Reset</button>
         </div>
         <hr>
         <div class="result">
-            <input type="textarea" class="form-control ds-input inp_text " placeholder="Text here" value="">
-            <button type="button" class="btn btn-success cenzor_btn">Cenzor</button>
+            <input (focus)="clear_text()" [(ngModel)]="inp_text" type="textarea" class="form-control ds-input" [class]="text_input">
+            <button (click)="cenzor()" type="button" class="btn btn-success">Cenzor</button>
         </div>
     </div>
 </section>
