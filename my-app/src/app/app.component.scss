@@ -1,5 +1,22 @@
 header {
     width: 100vw;
-    height: 50px;
-    background-color: #8080808f;
+    height: 10vh;
+    background-color: #8b89898f;
+    text-align: center;
+}
+
+section {
+    width: 100vw;
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #d8d8d88f;
+    .block_censorship {
+        width: 800px;
+        height: 250px;
+        background-color: #8b89898f;
+        border: 0.5px solid rgb(2, 2, 2);
+        border-radius: 5px;
+    }
 }
