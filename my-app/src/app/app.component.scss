@@ -18,32 +18,49 @@ section {
         background-color: #8b89898f;
         border: 0.5px solid rgb(2, 2, 2);
         border-radius: 5px;
-    }
-    .input_bad_word {
-        height: 40px;
-        display: flex;
-        justify-content: space-around;
-        input {
-            width: 60%;
-        }
-        button {
-            width: 15%;
-        }
-    }
-    .result {
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        input {
+        .bad_words {
             width: 97%;
-            height: 150px;
-            vertical-align: top;
-            margin-bottom: 15px;
+            height: auto;
+            margin: auto;
+            display: flex;
+            align-items: center;
+            p {
+                margin-bottom: 0px;
+                margin-left: 15px;
+                font-size: 24px;
+                font-weight: 600;
+                color: #be2b2b;
+            }
         }
-        button {
-            width: 97%;
-            margin-bottom: 15px;
+        .input_bad_word {
+            height: 40px;
+            display: flex;
+            justify-content: space-around;
+            input {
+                width: 60%;
+            }
+            .valid {
+                border-color: red;
+            }
+            button {
+                width: 15%;
+            }
+        }
+        .result {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            input {
+                width: 97%;
+                height: 150px;
+                vertical-align: top;
+                margin-bottom: 15px;
+            }
+            button {
+                width: 97%;
+                margin-bottom: 15px;
+            }
         }
     }
 }

@@ -4,13 +4,14 @@
 
 <section>
     <div class="block_censorship">
-        <div class="bad_words:">
+        <div class="bad_words">
             <h3>Bad words:</h3>
+            <p>{{bw_list}}</p>
         </div>
         <hr>
         <div class="input_bad_word">
-            <input type="text" class="form-control ds-input inp_bw " id="inp_bw" placeholder="Word here..." value="">
-            <button type="button" class="btn btn-warning add_btn">Add</button>
+            <input (focus)="clear()" [(ngModel)]="inp_bw" type="text" class="form-control ds-input" [class]="bw_input">
+            <button (click)="addBtn()" type="button" class="btn btn-warning add_btn">Add</button>
             <button type="button" class="btn btn-danger reset_btn">Reset</button>
         </div>
         <hr>
